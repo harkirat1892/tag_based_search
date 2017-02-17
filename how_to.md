@@ -42,7 +42,7 @@ Improving tag suggestions:
 
 - Setting related tags for every tag in "tag" table can help narrow down which tags to prefer over others.
 - Number of plays and likes associated to playlists mapped to a tag will also help
-- 
+
 
 CRUD:
 -----
