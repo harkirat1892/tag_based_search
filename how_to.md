@@ -6,6 +6,8 @@ Install Apache2 server, PostgreSQL, PHP5.5+
 Clone or copy this repo to your server file location, e.g.: /var/www/html which is default in Ubuntu
 
 
+Using API:
+---------
 Go to http://localhost and it should show a welcome page of Codeigniter, <b>assuming</b> you copied the repo to your server's root.
 
 
@@ -26,9 +28,24 @@ For "AR Rehman", use:
 YOUR_TAGS_HERE = ar_rehman
 
 
-he response has playlists that are the best match, along with a few suggestions for tags. Suggestions for tags can be greatly improved if checks for current playlists using the tag, total stats of the tag(play and like count for related playlists for a particular tag), and such data is generated and saved for use in suggestions.
+The response has playlists that are the best match, along with a few suggestions for tags.
 
 
+Suggested tags:
+--------------
+
+Suggestions for tags can be greatly improved if checks for current playlists using the tag, total stats of the tag(play and like count for related playlists for a particular tag), and such data is generated and saved for use in suggestions.
+
+
+Improving tag suggestions:
+--------------------------
+
+- Setting related tags for every tag in "tag" table can help narrow down which tags to prefer over others.
+- Number of plays and likes associated to playlists mapped to a tag will also help
+- 
+
+CRUD:
+-----
 There are basically two types of CRUD APIs in the app:
 
 - Tags:
